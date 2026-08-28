@@ -1,0 +1,29 @@
+<table>
+  <caption>
+    Plan comparison
+  </caption>
+
+  <thead>
+    <tr>
+      <th scope="col">Plan</th>
+      <th scope="col">Storage</th>
+      <th scope="col">Projects</th>
+      <th scope="col">Support</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    @for (plan of plans; track plan.name) {
+      <tr>
+        <th scope="row">{{ plan.name }}</th>
+        <td>{{ plan.storage }}</td>
+        <td>{{ plan.projects }}</td>
+        <td>{{ plan.support }}</td>
+      </tr>
+    }
+
+    <tr>
+      <td colspan="4">All plans include SSL and daily backups</td>
+    </tr>
+  </tbody>
+</table>
