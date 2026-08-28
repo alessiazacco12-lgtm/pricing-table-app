@@ -1,0 +1,39 @@
+table {
+  width: 100%;
+  max-width: 700px;
+  margin: 30px auto;
+  border-collapse: collapse;
+
+  /* Bordo esterno della tabella */
+  border: 2px solid #4f5b66;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #aab3bb;
+}
+
+/* Intestazioni */
+thead th {
+  background-color: #8fd3e8;
+}
+
+/* Righe dei piani */
+tbody tr:not(:last-child) {
+  background-color: #f3e7b3;
+}
+
+/* Ultima riga */
+tbody tr:last-child {
+  background-color: #bfc3c7;
+  font-weight: bold;
+}
+
+/* Titolo della tabella */
+caption {
+  margin-bottom: 12px;
+  font-size: 22px;
+  font-weight: bold;
+}
